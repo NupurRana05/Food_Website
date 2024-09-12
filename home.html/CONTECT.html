@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            contect page
+        </title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            .contact{
+                min-height: 100vh;
+                background-image: url('https://img.freepik.com/premium-photo/foods-background-food-menu-design-wooden-background-flat-lay_35641-1921.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                padding: 50px;
+                text-align: center;
+            }
+
+            .container{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .container h2{
+                font-size: 35px;
+                margin-bottom: 40px;
+                color: #333;
+            }
+
+            .contact-wrapper{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap:30px;
+            }
+
+            .contact-form{
+                text-align: left;
+            }
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.font-group{
+    margin-bottom: 20px;
+
+}
+
+input,#phone{
+width: 100%;
+padding: 12px;
+border-radius: 8px;
+border: none;
+background-color: #f8f9fa;
+color: #333;
+}
+
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: blue;
+    
+}
+.contact-info {
+    text-align: right;
+}
+.cantact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#333;
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color:#555;
+}
+.contact-info i{
+    color:#4caf50;
+    margin-right: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Contact Information</h3>
+                                <p><i class="fas fa-phone"></i>+1 123 456 789</p>
+                                <p><i class="fas fa-envalope"></i>info@example.com</p>
+                                <p><i class="fas fa-map-marker-alt"></i>123 ,street city indore</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

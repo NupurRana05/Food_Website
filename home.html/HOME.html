@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            background-color: rgb(34, 32, 32);
+            height:80px;
+            color: white;
+               }
+         label.logo{
+            color: white;
+            font-size: 40px;
+            line-height: 80px;
+         }  
+         
+         nav ul{
+            float: right;
+            margin-right: 20px;
+         }
+         nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin:0 5px;
+         }
+         nav ul li a{
+            color: white;
+            font-size: 18px;
+            padding: 7px 13px;
+         }
+         nav ul li :hover{
+            color: blue;
+         }
+
+         .hero{
+            width:100%;
+            height:400px;
+            background: url(https://www.shutterstock.com/image-photo/black-stone-cooking-background-spices-600nw-1914852676.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color:white;
+            text-align: center;
+            padding: 140px 0;
+         }
+
+         .hero h2{
+            font-size: 30px;
+            margin-bottom: 10px;
+         }
+         .hero p{
+            font-size: 20px;
+            margin-bottom: 10px;
+         }
+
+         .search-box{
+            max-width: 550px;
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .search-box input{
+            width:200px;
+            padding: 10px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+         }
+
+         .search-box button{
+            background-color: rgb(164, 56, 164);
+            padding: 10px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            padding: 10px 10px;
+         }
+         /*recipe section */
+         .recipes{
+            padding: 50px 0;
+         }
+         .recipes h2{
+            text-align: center;
+            font-size: 29px;
+         }
+         .recipe-section{
+            width:90%;
+            margin:0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+         }
+         .recipe-card{
+            background-color: white;
+            margin:30px 10px;
+            border-radius: 8px;
+            border:1px solid #ccc;
+            overflow: hidden;
+  }
+
+         .recipe-card img{
+            width:100%;
+            height:200px;
+            object-fit: cover;
+            cursor: pointer;
+             transition: 0.2s ease;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            }
+         
+            .recipe-card img:hover{
+               transform: scale(1.04);
+            }
+
+         .recipe-card p{
+            font-size: 15px;
+            padding: 20px;
+         }
+
+
+         .recipe-card a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+         }
+
+         #about{
+            padding: 25px 0 25px 0;
+         }
+
+         #about_row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 100px 0 100px;
+            background-color: whitesmoke;
+         }
+
+         .about_col{
+flex:1;
+         }
+
+         #about_img{
+            width:300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: auto;
+         }
+
+         #about_img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: fill;
+         }
+
+         .about_col h1{
+            text-align: center;
+            font-family: cursive;
+         }
+
+         .about_col p{
+            text-align: justify;
+            font-weight: bold;
+            background-color: whitesmoke;
+         }
+
+         footer{
+            background-color: #333;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+         }
+    </style>
+    <body>
+    <!--nav bar-->
+    <nav>
+        <label class="logo">FOODY</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="INDIANFOOD.html">Indian Food</a></li>
+            <li><a href="PUNJABIFOOD.html">Punjabi Food</a></li>
+            <li><a href="SOUTHINDIANFOOD.html">South Indian Food</a></li>
+            <li><a href="CHINESE.html">Chinese</a></li>
+            <li><a href="CONTECT.html">Contect</a></li>
+              </ul>
+    </nav>
+    <!--hero section -->
+    <section class="hero">
+       <div class="hero-section">
+        <h2>
+            Delicious Food
+        </h2>
+        <p>
+            Good Food is the Base of Good Health and Good Life
+        </p>
+        <form action="#" class="search-box">
+            <input type="text" placeholder="Search Recipe">
+            <button type="submit">Search</button>
+        </form>
+       </div> 
+    </section>
+    <!--recipe section-->
+    <section class="recipes">
+        <h2>Welcome to Featured Recipes</h2>
+        <div class="recipe-section">
+    <div class="recipe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gWY-LkcsuZtB6Fb1HjSnjZ5iejx-IB8PlbkSALIdCg&s"width="200"height="200">
+            <h2>Pen Cake</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipsicing</p>
+            <a href="#">View Recipe</a>
+        </div> 
+
+        <div class="recipe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCVmguDCxArgyaWLfOcXuCASQcVI3quXthGi4R8DgCg&s"width="200"height="200">
+            <h2>Custurd</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipsicing</p>
+            <a href="#">View Recipe</a>
+        </div> 
+
+        <div class="recipe-card">
+            <img src="https://maunikagowardhan.co.uk/wp-content/uploads/2011/11/Chilli-Paneer-700x467.jpg"width="200"height="200">
+            <h2>Chilli Paneer</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipsicing</p>
+            <a href="#">View Recipe</a>
+        </div> 
+
+        <div class="recipe-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAKCdp-4xCXL5Jkz1Q6Btx4WYsn1H8k_AZ4JUhZyaNg&s">
+            <h2>Protin Salad</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipsicing</p>
+            <a href="#">View Recipe</a>
+        </div> 
+        
+    </div>
+    </section>
+    <section>
+      <div id="about">
+         <h1 id="section">About</h1>
+         <div id="about_row">
+            <div class="about_col">
+               <h1 style="color:blueviolet">About Us</h1>
+               <p style="color: rgb(130, 60, 195);">
+Order online or book a table we are always ready to full fill your demand.
+We provide your order whithin a very short time keep with us to take our delicious 
+food.Food is more than just sustenance; it is a language that speaks to our senses and brings people together. Whether you're a food enthusiast, a passionate chef, or simply someone who appreciates the art of cuisine, sharing your culinary adventures on Instagram has become a delightful ritual. However, finding the perfect words to accompany your mouthwatering food photos can sometimes be a challenging task.
+
+               </p>
+            </div>
+            <div class="about_col">
+               <div id ="about_img">
+               <div><img src="https://t4.ftcdn.net/jpg/02/18/23/11/240_F_218231188_Vp14PsaUJUwjw8jP1NGPaYiayjUPgtP1.jpg"></div>
+            </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    </div>
+    <footer>
+        <div>
+            <p>&copy;2024 Delicious Food</p>
+        </div>
+    </footer>
+</body>
+
+</html>
